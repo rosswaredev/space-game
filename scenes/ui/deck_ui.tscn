@@ -19,25 +19,30 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 16
 
-[node name="CardSlot4" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
+[node name="CardSlot0" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
 layout_mode = 2
 
-[node name="CardSlot5" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
+[node name="CardSlot1" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
 layout_mode = 2
+slot_number = 1
 
-[node name="CardSlot6" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
+[node name="CardSlot2" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
 layout_mode = 2
+slot_number = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 16
 
-[node name="CardSlot" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
-layout_mode = 2
-
-[node name="CardSlot2" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
-layout_mode = 2
-
 [node name="CardSlot3" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
 layout_mode = 2
+slot_number = 3
+
+[node name="CardSlot4" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2
+slot_number = 4
+
+[node name="CardSlot5" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2
+slot_number = 5

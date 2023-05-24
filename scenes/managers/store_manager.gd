@@ -4,19 +4,22 @@ class_name StoreManager
 
 signal store_refreshed(card_offering: Array[CardDefinition])
 
-@export var card_manager: CardManager
-
 var slot_count = 3
 var card_offering: Array[CardDefinition]
 
 
+func _ready():
+	GameEvents.card_dropped_on_deck_slot.connect(on_card_dropped_on_deck_slot)
+
+
 func refresh_store():
 	for _i in range(slot_count):
-		card_offering.append(pick_random_card())
+		var random_card = Global.card_pool.pick_random()
+		card_offering.append(random_card)
+		print(random_card)
 
 	store_refreshed.emit(card_offering)
 
 
-func pick_random_card():
-	var random_index = randi_range(0, card_manager.card_pool.size() - 1)
-	return card_manager.card_pool[random_index]
+func on_card_dropped_on_deck_slot(id: String, slot_number: int):
+	print(id, slot_number)

@@ -4,5 +4,6 @@
 
 [resource]
 script = ExtResource("1_owxau")
+id = "rapid-fire"
 name = "Rapid Fire"
 description = "Increases weapon attack speed"

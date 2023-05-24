@@ -14,6 +14,12 @@ config/name="Space Game"
 run/main_scene="res://scenes/main/main.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 
+[autoload]
+
+CardManager="*res://scenes/managers/card_manager.gd"
+Global="*res://resources/global.gd"
+GameEvents="*res://resources/game_events.gd"
+
 [display]
 
 window/size/viewport_width=540
