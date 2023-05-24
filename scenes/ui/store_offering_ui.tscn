@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b80g5sa66f41"]
+
+[ext_resource type="Script" path="res://scenes/ui/store_offering_ui.gd" id="1_4u161"]
+
+[node name="StoreOfferingUI" type="CanvasLayer"]
+script = ExtResource("1_4u161")
+
+[node name="Container" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = -1.0
+offset_bottom = 193.0
+grow_horizontal = 2
+theme_override_constants/separation = 32
+alignment = 1

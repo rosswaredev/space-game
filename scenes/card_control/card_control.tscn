@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dktybapk8hxg2"]
+
+[ext_resource type="Texture2D" uid="uid://8s81ikh2cw5l" path="res://scenes/draggable_card/card_base.png" id="1_1ic7j"]
+[ext_resource type="Script" path="res://scenes/card_control/card_control.gd" id="1_ca4o1"]
+
+[node name="CardControl" type="AspectRatioContainer"]
+offset_left = -48.0
+offset_top = -60.0
+offset_right = 48.0
+offset_bottom = 60.0
+script = ExtResource("1_ca4o1")
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_1ic7j")
+
+[node name="NameLabel" type="Label" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Hello"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

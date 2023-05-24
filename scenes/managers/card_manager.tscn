@@ -1,0 +1,13 @@
+[gd_scene load_steps=8 format=3 uid="uid://xgn8312b2x2u"]
+
+[ext_resource type="Script" path="res://scenes/managers/card_manager.gd" id="1_ma104"]
+[ext_resource type="Resource" uid="uid://c56svnixqi660" path="res://resources/cards/energy_shield.tres" id="2_bjlgh"]
+[ext_resource type="Resource" uid="uid://cr8hnvfer24wa" path="res://resources/cards/flame_thrower.tres" id="3_dgiw1"]
+[ext_resource type="Resource" uid="uid://v82mucmnquj2" path="res://resources/cards/laser_beam.tres" id="4_y4vij"]
+[ext_resource type="Resource" uid="uid://bfso4xfdsahx" path="res://resources/cards/plasma_gun.tres" id="5_dnuv8"]
+[ext_resource type="Resource" uid="uid://cuj6enb6q2gaf" path="res://resources/cards/rapid_fire.tres" id="6_5ynyc"]
+[ext_resource type="Resource" uid="uid://cikhlwg2wf6no" path="res://resources/cards/repair_module.tres" id="7_xij1m"]
+
+[node name="CardManager" type="Node"]
+script = ExtResource("1_ma104")
+card_pool = Array[Resource("res://resources/cards/card_definition.gd")]([ExtResource("2_bjlgh"), ExtResource("3_dgiw1"), ExtResource("4_y4vij"), ExtResource("5_dnuv8"), ExtResource("6_5ynyc"), ExtResource("7_xij1m")])

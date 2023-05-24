@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://clkbnbgmlql4o"]
+
+[ext_resource type="PackedScene" uid="uid://d2uvlvrnbae52" path="res://scenes/card_slot/card_slot.tscn" id="1_3ljrl"]
+
+[node name="DeckUI" type="CanvasLayer"]
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -288.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="VBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 16
+
+[node name="CardSlot4" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2
+
+[node name="CardSlot5" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2
+
+[node name="CardSlot6" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 16
+
+[node name="CardSlot" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2
+
+[node name="CardSlot2" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2
+
+[node name="CardSlot3" parent="HBoxContainer/HBoxContainer" instance=ExtResource("1_3ljrl")]
+layout_mode = 2

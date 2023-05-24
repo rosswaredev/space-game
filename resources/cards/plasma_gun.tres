@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bfso4xfdsahx"]
+
+[ext_resource type="Script" path="res://resources/cards/card_definition.gd" id="1_bpkhm"]
+
+[resource]
+script = ExtResource("1_bpkhm")
+name = "Energy Shield"
+description = "Activates a protective shield, reducing incoming damage"

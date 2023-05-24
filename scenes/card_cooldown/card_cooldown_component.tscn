@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dybr11jl8bmxq"]
+
+[ext_resource type="Script" path="res://scenes/card_cooldown/card_cooldown_component.gd" id="1_0n8f2"]
+[ext_resource type="Texture2D" uid="uid://bemklonb88fse" path="res://scenes/card_cooldown/cooldown-progress.png" id="1_gvcmt"]
+
+[node name="CardCooldownComponent" type="Node2D"]
+script = ExtResource("1_0n8f2")
+
+[node name="CooldownProgress" type="TextureProgressBar" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+offset_left = -48.0
+offset_top = -60.0
+offset_right = 48.0
+offset_bottom = 60.0
+fill_mode = 5
+texture_progress = ExtResource("1_gvcmt")
+
+[node name="CooldownTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true

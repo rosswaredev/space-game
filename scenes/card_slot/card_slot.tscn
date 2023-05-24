@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2uvlvrnbae52"]
+
+[ext_resource type="Script" path="res://scenes/card_slot/card_slot.gd" id="1_kmdsi"]
+[ext_resource type="Texture2D" uid="uid://o8ygi6o0x22c" path="res://scenes/card_slot/card_slot.png" id="2_o74j6"]
+
+[node name="CardSlot" type="AspectRatioContainer"]
+offset_left = -48.0
+offset_top = -60.0
+offset_right = 48.0
+offset_bottom = 60.0
+script = ExtResource("1_kmdsi")
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_o74j6")

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cikhlwg2wf6no"]
+
+[ext_resource type="Script" path="res://resources/cards/card_definition.gd" id="1_txinu"]
+
+[resource]
+script = ExtResource("1_txinu")
+name = "Repair Module"
+description = "Regenerates a portion of the ship's health"

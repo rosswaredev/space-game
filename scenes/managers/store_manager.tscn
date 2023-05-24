@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0njrb2jjgaje"]
+
+[ext_resource type="Script" path="res://scenes/managers/store_manager.gd" id="1_hy75i"]
+
+[node name="StoreManager" type="Node"]
+script = ExtResource("1_hy75i")

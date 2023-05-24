@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7g1mxlo5ydtf"]
+
+[ext_resource type="Script" path="res://scenes/card_control/draggable_component.gd" id="1_rkdir"]
+[ext_resource type="PackedScene" uid="uid://dktybapk8hxg2" path="res://scenes/card_control/card_control.tscn" id="2_hoa6g"]
+[ext_resource type="PackedScene" uid="uid://dybr11jl8bmxq" path="res://scenes/card_cooldown/card_cooldown_component.tscn" id="3_nue4f"]
+
+[node name="DraggableCard" type="AspectRatioContainer"]
+offset_left = -48.0
+offset_top = -60.0
+offset_right = 48.0
+offset_bottom = 60.0
+script = ExtResource("1_rkdir")
+
+[node name="CardControl" parent="." instance=ExtResource("2_hoa6g")]
+layout_mode = 2
+
+[node name="CardCooldownComponent" parent="." instance=ExtResource("3_nue4f")]
+visible = false
