@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3 uid="uid://l7jxj35kfaps"]
+
+[ext_resource type="Script" path="res://scenes/store_screen/store_screen.gd" id="1_c6lvt"]
+[ext_resource type="PackedScene" uid="uid://d2uvlvrnbae52" path="res://scenes/card_slot/card_slot.tscn" id="3_3kf6f"]
+[ext_resource type="PackedScene" uid="uid://cv6ys3xu05iku" path="res://scenes/star-field/star-field.tscn" id="5_5vh4e"]
+
+[node name="StoreScreen" type="Node"]
+script = ExtResource("1_c6lvt")
+
+[node name="Background" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.113725, 0.0627451, 0.14902, 1)
+
+[node name="StarField" parent="Background" instance=ExtResource("5_5vh4e")]
+position = Vector2(270, -20)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 68.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="GoldLabel" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "XXg"
+
+[node name="CardContainer" type="HBoxContainer" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="CardSlot3" parent="HBoxContainer/CardContainer" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+
+[node name="CardSlot2" parent="HBoxContainer/CardContainer" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+
+[node name="CardSlot" parent="HBoxContainer/CardContainer" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+
+[node name="RefreshButton" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Refresh"
+
+[node name="DeckContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 656.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Deck" type="GridContainer" parent="DeckContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="CardSlot0" parent="DeckContainer/Deck" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+
+[node name="CardSlot1" parent="DeckContainer/Deck" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+slot_number = 1
+
+[node name="CardSlot2" parent="DeckContainer/Deck" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+slot_number = 2
+
+[node name="CardSlot3" parent="DeckContainer/Deck" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+slot_number = 3
+
+[node name="CardSlot4" parent="DeckContainer/Deck" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+slot_number = 4
+
+[node name="CardSlot5" parent="DeckContainer/Deck" instance=ExtResource("3_3kf6f")]
+layout_mode = 2
+slot_number = 5

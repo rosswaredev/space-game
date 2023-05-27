@@ -5,8 +5,8 @@ var name: String
 var description: String
 
 
-func _init(id = "", name = "", description = ""):
-	self.id = id
-	self.name = name
-	self.description = description
-	
+func _init(card_id = "", card_name = "", card_description = ""):
+	id = card_id
+	name = card_name
+	description = card_description
+

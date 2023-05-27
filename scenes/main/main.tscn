@@ -1,47 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://dyu311wiikvho"]
+[gd_scene load_steps=4 format=3 uid="uid://dyu311wiikvho"]
 
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_6qbfx"]
-[ext_resource type="PackedScene" uid="uid://cv6ys3xu05iku" path="res://scenes/star-field/star-field.tscn" id="1_gpxtl"]
-[ext_resource type="PackedScene" uid="uid://d0njrb2jjgaje" path="res://scenes/managers/store_manager.tscn" id="2_a1qgv"]
 [ext_resource type="PackedScene" uid="uid://cgn7axrbfbcvr" path="res://scenes/player/player.tscn" id="2_a1wjt"]
-[ext_resource type="PackedScene" uid="uid://b80g5sa66f41" path="res://scenes/ui/store_offering_ui.tscn" id="3_iwogi"]
-[ext_resource type="PackedScene" uid="uid://umirbstvqv0s" path="res://scenes/managers/deck_manager.tscn" id="4_r0w7h"]
-[ext_resource type="PackedScene" uid="uid://clkbnbgmlql4o" path="res://scenes/ui/deck_ui.tscn" id="5_bdtwf"]
+[ext_resource type="PackedScene" uid="uid://l7jxj35kfaps" path="res://scenes/store_screen/store_screen.tscn" id="2_acpmm"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_6qbfx")
 
-[node name="StoreManager" parent="." instance=ExtResource("2_a1qgv")]
-
-[node name="DeckManager" parent="." node_paths=PackedStringArray("store_manager") instance=ExtResource("4_r0w7h")]
-store_manager = NodePath("../StoreManager")
-
-[node name="StoreOfferingUI" parent="." node_paths=PackedStringArray("store_manager") instance=ExtResource("3_iwogi")]
-store_manager = NodePath("../StoreManager")
-
-[node name="DeckUI" parent="." instance=ExtResource("5_bdtwf")]
-
-[node name="Background" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 540.0
-offset_bottom = 960.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="Background"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.113725, 0.0627451, 0.14902, 1)
-
-[node name="StarField" parent="Background" instance=ExtResource("1_gpxtl")]
-position = Vector2(270, -20)
+[node name="StoreScreen" parent="." instance=ExtResource("2_acpmm")]
 
 [node name="Player" parent="." instance=ExtResource("2_a1wjt")]
 visible = false
