@@ -7,3 +7,4 @@ class_name StoreSlot
 
 func set_card_details(card_definition: CardDefinition):
 	drag_card.set_card_details(card_definition)
+	drag_card.show()

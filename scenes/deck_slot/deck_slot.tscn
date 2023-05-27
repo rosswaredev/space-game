@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d2uvlvrnbae52"]
 
-[ext_resource type="Script" path="res://scenes/card_slot/card_slot.gd" id="1_kmdsi"]
-[ext_resource type="Texture2D" uid="uid://o8ygi6o0x22c" path="res://scenes/card_slot/card_slot.png" id="2_o74j6"]
+[ext_resource type="Script" path="res://scenes/deck_slot/deck_slot.gd" id="1_kmdsi"]
+[ext_resource type="Texture2D" uid="uid://o8ygi6o0x22c" path="res://scenes/deck_slot/deck_slot.png" id="2_o74j6"]
 [ext_resource type="PackedScene" uid="uid://c7g1mxlo5ydtf" path="res://scenes/drag_card/drag_card.tscn" id="3_yad6d"]
 
 [node name="CardSlot" type="AspectRatioContainer"]
@@ -17,4 +17,5 @@ layout_mode = 2
 texture = ExtResource("2_o74j6")
 
 [node name="DragCard" parent="." instance=ExtResource("3_yad6d")]
+visible = false
 layout_mode = 2
