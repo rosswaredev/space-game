@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://o8ygi6o0x22c" path="res://scenes/deck_slot/deck_slot.png" id="2_o74j6"]
 [ext_resource type="PackedScene" uid="uid://c7g1mxlo5ydtf" path="res://scenes/drag_card/drag_card.tscn" id="3_yad6d"]
 
-[node name="CardSlot" type="AspectRatioContainer"]
+[node name="DeckSlot" type="AspectRatioContainer"]
 offset_left = -48.0
 offset_top = -60.0
 offset_right = 48.0
@@ -19,3 +19,4 @@ texture = ExtResource("2_o74j6")
 [node name="DragCard" parent="." instance=ExtResource("3_yad6d")]
 visible = false
 layout_mode = 2
+source = "deck"

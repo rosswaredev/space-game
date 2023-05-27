@@ -19,3 +19,4 @@ texture = ExtResource("1_5ps8u")
 [node name="DragCard" parent="." instance=ExtResource("3_bd7u6")]
 visible = false
 layout_mode = 2
+source = "store"
