@@ -22,4 +22,4 @@ func on_spend_gold(gold_amount: int) -> void:
 func on_deck_changed(deck_cards: Array[CardDefinition]) -> void:
 	deck = deck_cards
 	store_screen.display_deck_cards(deck)
-	print(deck)
+

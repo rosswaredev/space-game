@@ -12,7 +12,6 @@ func _ready():
 func set_card_details(card_definition: CardDefinition):
 	card = card_definition
 	set_controls()
-	show()
 
 
 func set_controls():

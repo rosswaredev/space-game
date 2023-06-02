@@ -20,4 +20,8 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 
 
 func set_card_details(card_definition: CardDefinition):
-	drag_card.set_card_details(card_definition)
+	if card_definition == null:
+		drag_card.hide()
+	else:
+		drag_card.set_card_details(card_definition)
+		drag_card.show()

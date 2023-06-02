@@ -6,10 +6,11 @@ signal spend_gold(gold_amount: int)
 signal deck_changed(deck_cards: Array[CardDefinition])
 
 @onready var StoreSlot = preload("res://scenes/store_slot/store_slot.tscn")
-@onready var card_container = $%CardContainer
-@onready var refresh_button = $%RefreshButton
-@onready var gold_label = $%GoldLabel
-@onready var deck = $%Deck
+@onready var card_container = %CardContainer
+@onready var refresh_button = %RefreshButton
+@onready var next_button = %NextButton
+@onready var gold_label = %GoldLabel
+@onready var deck = %Deck
 
 var REFRESH_COST = 1
 var CARD_COST = 3
@@ -21,8 +22,10 @@ var deck_cards: Array[CardDefinition] = [
 	null, null, null
 ]
 
+
 func _ready():
 	refresh_button.pressed.connect(on_refresh_button_pressed)
+	next_button.pressed.connect(on_next_button_pressed)
 
 	var deck_slots = deck.get_children() as Array[DeckSlot]
 	for index in deck_slots.size():
@@ -32,15 +35,8 @@ func _ready():
 	refresh_store()
 
 
-func _can_drop_data(_at_position: Vector2, data) -> bool:
-	return data is Dictionary and data.has("source")
-
-
-func _drop_data(_at_position: Vector2, data) -> void:
-	if data.source == "store":
-		display_store_cards()
-	elif data.source == "deck":
-		display_deck_cards(deck_cards)
+func on_next_button_pressed() -> void:
+	pass
 
 
 func refresh_card_offering() -> void:
@@ -58,6 +54,7 @@ func display_store_cards() -> void:
 		var card = card_offering[slot_index]
 		var store_slot = StoreSlot.instantiate()
 		card_container.add_child(store_slot)
+
 		store_slot.set_slot_index(slot_index)
 		store_slot.set_card_details(card)
 
@@ -103,14 +100,14 @@ func swap_cards(source_slot_index: int, deck_slot_index: int) -> void:
 
 func purchase_card(card: CardDefinition, source_slot_index: int, deck_slot_index: int) -> void:
 	var existing_card = deck_cards[deck_slot_index]
+	if existing_card == null and gold >= CARD_COST:
+		card_offering[source_slot_index] = null
 
-	if existing_card == null:
-		if gold >= CARD_COST:
-			card_offering[source_slot_index] = null
-			spend_gold.emit(CARD_COST)
-			place_card_in_deck(card, deck_slot_index)
-	else:
-		display_store_cards()
+		spend_gold.emit(CARD_COST)
+		place_card_in_deck(card, deck_slot_index)
+
+	display_store_cards()
+
 
 func place_card_in_deck(card: CardDefinition, deck_slot_index: int):
 	deck_cards[deck_slot_index] = card
