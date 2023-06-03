@@ -9,9 +9,23 @@ var deck: Array[CardDefinition] = [null, null, null, null, null, null]
 
 
 func _ready() -> void:
+	GameEvents.screen_changed.connect(_on_screen_changed)
+
+
+
 	store_screen.spend_gold.connect(on_spend_gold)
 	store_screen.deck_changed.connect(on_deck_changed)
 	store_screen.display_gold(12)
+
+
+func _on_screen_changed(screen: GameEvents.Screen, scene):
+	match screen:
+		GameEvents.Screen.BATTLE:
+			_connect_battle_screen(scene)
+
+
+func _connect_battle_screen(battle_screen: BattleScreen):
+	battle_screen.display_deck(deck)
 
 
 func on_spend_gold(gold_amount: int) -> void:

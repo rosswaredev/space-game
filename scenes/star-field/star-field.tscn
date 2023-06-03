@@ -16,7 +16,7 @@ angular_velocity_max = 50.0
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
 scale_min = 0.8
-color = Color(1, 1, 1, 0.745098)
+color = Color(1, 1, 1, 0.5)
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wxq47"]
 emission_shape = 3
@@ -33,7 +33,7 @@ orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
 scale_min = 0.4
 scale_max = 0.8
-color = Color(1, 1, 1, 0.427451)
+color = Color(1, 1, 1, 0.3)
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6npcg"]
 emission_shape = 3
@@ -50,7 +50,7 @@ orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
 scale_min = 0.2
 scale_max = 0.5
-color = Color(1, 1, 1, 0.219608)
+color = Color(1, 1, 1, 0.15)
 
 [node name="StarField" type="Node2D"]
 

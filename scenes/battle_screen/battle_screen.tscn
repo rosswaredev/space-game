@@ -1,6 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://cy8qm6l2hbgkh"]
+[gd_scene load_steps=4 format=3 uid="uid://cy8qm6l2hbgkh"]
 
 [ext_resource type="Script" path="res://scenes/battle_screen/battle_screen.gd" id="1_66na8"]
+[ext_resource type="PackedScene" uid="uid://dktybapk8hxg2" path="res://scenes/card_control/card_control.tscn" id="2_2r74u"]
+[ext_resource type="PackedScene" uid="uid://cgn7axrbfbcvr" path="res://scenes/player/player.tscn" id="3_jmdev"]
 
 [node name="BattleScreen" type="CanvasLayer"]
 script = ExtResource("1_66na8")
+
+[node name="DeckContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 656.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Deck" type="GridContainer" parent="DeckContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="DeckCard" parent="DeckContainer/Deck" instance=ExtResource("2_2r74u")]
+layout_mode = 2
+
+[node name="DeckCard2" parent="DeckContainer/Deck" instance=ExtResource("2_2r74u")]
+layout_mode = 2
+
+[node name="DeckCard3" parent="DeckContainer/Deck" instance=ExtResource("2_2r74u")]
+layout_mode = 2
+
+[node name="DeckCard4" parent="DeckContainer/Deck" instance=ExtResource("2_2r74u")]
+layout_mode = 2
+
+[node name="DeckCard5" parent="DeckContainer/Deck" instance=ExtResource("2_2r74u")]
+layout_mode = 2
+
+[node name="DeckCard6" parent="DeckContainer/Deck" instance=ExtResource("2_2r74u")]
+layout_mode = 2
+
+[node name="Player" parent="." instance=ExtResource("3_jmdev")]
+position = Vector2(275, 596)
