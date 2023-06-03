@@ -1,9 +1,10 @@
-extends Control
+extends CanvasLayer
 class_name StoreScreen
 
 
 signal spend_gold(gold_amount: int)
 signal deck_changed(deck_cards: Array[CardDefinition])
+signal next_scene
 
 @onready var StoreSlot = preload("res://scenes/store_slot/store_slot.tscn")
 @onready var card_container = %CardContainer
@@ -36,7 +37,7 @@ func _ready():
 
 
 func on_next_button_pressed() -> void:
-	pass
+	Global.change_scene("res://scenes/battle_screen/battle_screen.tscn")
 
 
 func refresh_card_offering() -> void:
