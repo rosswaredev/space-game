@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cy8qm6l2hbgkh"]
 
 [ext_resource type="Script" path="res://scenes/battle_screen/battle_screen.gd" id="1_66na8"]
-[ext_resource type="PackedScene" uid="uid://6egjxkbf2x8f" path="res://scenes/unit/unit.tscn" id="2_xj8de"]
+[ext_resource type="PackedScene" uid="uid://nhp2tswi6inw" path="res://scenes/unit/unit.tscn" id="2_xj8de"]
 
 [node name="BattleScreen" type="CanvasLayer"]
 script = ExtResource("1_66na8")

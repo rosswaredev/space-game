@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://6egjxkbf2x8f"]
+[gd_scene load_steps=9 format=3 uid="uid://nhp2tswi6inw"]
 
 [ext_resource type="Script" path="res://scenes/unit/unit.gd" id="1_vl2jb"]
 [ext_resource type="Texture2D" uid="uid://c2i481ow502fm" path="res://resources/cards/ship_fighter_1.png" id="2_q4df4"]
+[ext_resource type="Texture2D" uid="uid://c3pl7erdmwv1r" path="res://scenes/unit/health_bar_under.png" id="3_82j81"]
+[ext_resource type="Texture2D" uid="uid://vcwllj65qyj3" path="res://scenes/unit/health_bar_progress.png" id="3_871bq"]
+[ext_resource type="Script" path="res://scenes/unit/texture_progress_bar.gd" id="4_ynvje"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_14m34"]
 radius = 15.0333
@@ -42,3 +45,15 @@ texture = ExtResource("2_q4df4")
 libraries = {
 "": SubResource("AnimationLibrary_2a8tn")
 }
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -31.0
+offset_top = 42.0
+offset_right = 33.0
+offset_bottom = 50.0
+max_value = 6.0
+value = 4.0
+texture_under = ExtResource("3_82j81")
+texture_progress = ExtResource("3_871bq")
+texture_progress_offset = Vector2(2, 2)
+script = ExtResource("4_ynvje")
