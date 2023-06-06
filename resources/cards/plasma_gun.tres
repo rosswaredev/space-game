@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bfso4xfdsahx"]
-
-[ext_resource type="Script" path="res://resources/cards/card_definition.gd" id="1_bpkhm"]
-
-[resource]
-script = ExtResource("1_bpkhm")
-id = "plasma-gun"
-name = "Plasma Gun"
-description = "Pew pew"

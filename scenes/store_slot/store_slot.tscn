@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bohdjp84govs6"]
 
 [ext_resource type="Script" path="res://scenes/store_slot/store_slot.gd" id="1_2s8ta"]
-[ext_resource type="Texture2D" uid="uid://gkjoxkvq8xwl" path="res://scenes/store_slot/store_slot.png" id="1_5ps8u"]
+[ext_resource type="Texture2D" uid="uid://2b6tof8o0a2y" path="res://scenes/store_slot/store_slot.png" id="1_5ps8u"]
 [ext_resource type="PackedScene" uid="uid://c7g1mxlo5ydtf" path="res://scenes/drag_card/drag_card.tscn" id="3_bd7u6"]
 
 [node name="StoreSlot" type="CenterContainer"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2b6tof8o0a2y"
-path="res://.godot/imported/store_slot.png-1ad19f2f8d53a942628681f2e3ba9aea.ctex"
+uid="uid://duegtrpsw0uv6"
+path="res://.godot/imported/projectile_1.png-d7df1c35f0e32804552d13a10d672876.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/store_slot/store_slot.png"
-dest_files=["res://.godot/imported/store_slot.png-1ad19f2f8d53a942628681f2e3ba9aea.ctex"]
+source_file="res://scenes/projectile/projectile_1.png"
+dest_files=["res://.godot/imported/projectile_1.png-d7df1c35f0e32804552d13a10d672876.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
