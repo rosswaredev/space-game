@@ -4,7 +4,7 @@ class_name Game
 
 @onready var store_screen = %StoreScreen as StoreScreen
 
-var gold = 12
+var gold = 99
 var deck: Array[CardDefinition] = [null, null, null, null, null, null]
 
 

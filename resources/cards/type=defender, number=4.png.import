@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gkjoxkvq8xwl"
-path="res://.godot/imported/store_slot.png-1ad19f2f8d53a942628681f2e3ba9aea.ctex"
+uid="uid://dglh55qrsursg"
+path="res://.godot/imported/type=defender, number=4.png-861365e251ec23df014a773bd52433f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/store_slot/store_slot.png"
-dest_files=["res://.godot/imported/store_slot.png-1ad19f2f8d53a942628681f2e3ba9aea.ctex"]
+source_file="res://resources/cards/type=defender, number=4.png"
+dest_files=["res://.godot/imported/type=defender, number=4.png-861365e251ec23df014a773bd52433f2.ctex"]
 
 [params]
 

@@ -1,0 +1,16 @@
+[
+  {
+	"id": "blaster",
+	"name": "Blaster",
+	"health": 6,
+	"attack": 1,
+	"texture": "ship_fighter_1.png"
+  },
+  {
+	"id": "slicer",
+	"name": "Slicer",
+	"health": 4,
+	"attack": 1,
+	"texture": "ship_fighter_2.png"
+  }
+]

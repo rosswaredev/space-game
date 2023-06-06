@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://c56svnixqi660"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c56svnixqi660"]
 
 [ext_resource type="Script" path="res://resources/cards/card_definition.gd" id="1_l27c2"]
 
 [resource]
 script = ExtResource("1_l27c2")
-id = "enery-shield"
-name = "Energy Shield"
-description = "Activates a protective shield, reducing incoming damage"
+id = ""
+name = ""
+description = ""

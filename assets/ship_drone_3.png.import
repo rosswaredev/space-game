@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gkjoxkvq8xwl"
-path="res://.godot/imported/store_slot.png-1ad19f2f8d53a942628681f2e3ba9aea.ctex"
+uid="uid://75fvnbi5a36"
+path="res://.godot/imported/ship_drone_3.png-e055798a8fa98106c3f89a012a042e1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/store_slot/store_slot.png"
-dest_files=["res://.godot/imported/store_slot.png-1ad19f2f8d53a942628681f2e3ba9aea.ctex"]
+source_file="res://assets/ship_drone_3.png"
+dest_files=["res://.godot/imported/ship_drone_3.png-e055798a8fa98106c3f89a012a042e1e.ctex"]
 
 [params]
 

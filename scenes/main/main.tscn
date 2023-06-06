@@ -1,9 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://dyu311wiikvho"]
+[gd_scene load_steps=7 format=3 uid="uid://dyu311wiikvho"]
 
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_6qbfx"]
 [ext_resource type="Script" path="res://scenes/game/game.gd" id="2_0qndh"]
 [ext_resource type="PackedScene" uid="uid://l7jxj35kfaps" path="res://scenes/store_screen/store_screen.tscn" id="2_acpmm"]
 [ext_resource type="PackedScene" uid="uid://cv6ys3xu05iku" path="res://scenes/star-field/star-field.tscn" id="2_xtujl"]
+[ext_resource type="PackedScene" uid="uid://c7g1mxlo5ydtf" path="res://scenes/drag_card/drag_card.tscn" id="5_2opdw"]
+
+[sub_resource type="Environment" id="Environment_2yvk0"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 1.1
+glow_strength = 1.21
+glow_blend_mode = 1
 
 [node name="Main" type="Node"]
 script = ExtResource("1_6qbfx")
@@ -34,3 +42,12 @@ script = ExtResource("2_0qndh")
 
 [node name="StoreScreen" parent="Game" instance=ExtResource("2_acpmm")]
 unique_name_in_owner = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_2yvk0")
+
+[node name="DragCard" parent="." instance=ExtResource("5_2opdw")]
+offset_left = 54.0
+offset_top = 333.0
+offset_right = 150.0
+offset_bottom = 461.0

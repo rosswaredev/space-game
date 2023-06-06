@@ -4,15 +4,20 @@
 [ext_resource type="PackedScene" uid="uid://dktybapk8hxg2" path="res://scenes/card_control/card_control.tscn" id="2_yuiam"]
 [ext_resource type="PackedScene" uid="uid://dybr11jl8bmxq" path="res://scenes/card_cooldown/card_cooldown_component.tscn" id="3_ex78q"]
 
-[node name="DragCard" type="AspectRatioContainer"]
+[node name="DragCard" type="Control"]
+custom_minimum_size = Vector2(96, 128)
+layout_mode = 3
+anchors_preset = 0
 offset_left = -48.0
-offset_top = -60.0
+offset_top = -64.0
 offset_right = 48.0
-offset_bottom = 60.0
+offset_bottom = 64.0
 script = ExtResource("1_6bbao")
 
 [node name="CardControl" parent="." instance=ExtResource("2_yuiam")]
 layout_mode = 2
+offset_right = 96.0
+offset_bottom = 128.0
 
 [node name="CardCooldownComponent" parent="." instance=ExtResource("3_ex78q")]
 visible = false
