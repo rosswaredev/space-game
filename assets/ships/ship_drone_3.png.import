@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://75fvnbi5a36"
-path="res://.godot/imported/ship_drone_3.png-e055798a8fa98106c3f89a012a042e1e.ctex"
+path="res://.godot/imported/ship_drone_3.png-934ebc25d42b8567aeacd6d6c1e21ad1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ship_drone_3.png"
-dest_files=["res://.godot/imported/ship_drone_3.png-e055798a8fa98106c3f89a012a042e1e.ctex"]
+source_file="res://assets/ships/ship_drone_3.png"
+dest_files=["res://.godot/imported/ship_drone_3.png-934ebc25d42b8567aeacd6d6c1e21ad1.ctex"]
 
 [params]
 

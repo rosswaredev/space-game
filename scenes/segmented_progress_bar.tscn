@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddusr8l84a587"]
+
+[ext_resource type="Texture2D" uid="uid://c3pl7erdmwv1r" path="res://scenes/segmented_progress_bar/health_bar_under.png" id="1_124pt"]
+[ext_resource type="Texture2D" uid="uid://vcwllj65qyj3" path="res://scenes/segmented_progress_bar/health_bar_progress.png" id="2_tjcas"]
+[ext_resource type="Script" path="res://scenes/segmented_progress_bar/texture_progress_bar.gd" id="3_3b1ot"]
+
+[node name="SegmentedProgressBar" type="TextureProgressBar"]
+offset_left = -31.0
+offset_top = 42.0
+offset_right = 33.0
+offset_bottom = 50.0
+max_value = 6.0
+value = 4.0
+texture_under = ExtResource("1_124pt")
+texture_progress = ExtResource("2_tjcas")
+texture_progress_offset = Vector2(2, 2)
+script = ExtResource("3_3b1ot")

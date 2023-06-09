@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f8e0gbh6kk83"
-path="res://.godot/imported/ship_fighter_2.png-7a1eb4264077f7047fd5d942d3f63b59.ctex"
+uid="uid://vcwllj65qyj3"
+path="res://.godot/imported/health_bar_progress.png-1df1f782b1f42daa9eb4aed08d72488d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ship_fighter_2.png"
-dest_files=["res://.godot/imported/ship_fighter_2.png-7a1eb4264077f7047fd5d942d3f63b59.ctex"]
+source_file="res://scenes/segmented_progress_bar/health_bar_progress.png"
+dest_files=["res://.godot/imported/health_bar_progress.png-1df1f782b1f42daa9eb4aed08d72488d.ctex"]
 
 [params]
 

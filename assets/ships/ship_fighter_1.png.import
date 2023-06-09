@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o0dxrsr0mpog"
-path="res://.godot/imported/type=fighter, number=3.png-4ef566e6fea715c34883d18bbc5605e8.ctex"
+uid="uid://c2i481ow502fm"
+path="res://.godot/imported/ship_fighter_1.png-a4af7db97575228d95f3cd21fdb5b525.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/cards/type=fighter, number=3.png"
-dest_files=["res://.godot/imported/type=fighter, number=3.png-4ef566e6fea715c34883d18bbc5605e8.ctex"]
+source_file="res://assets/ships/ship_fighter_1.png"
+dest_files=["res://.godot/imported/ship_fighter_1.png-a4af7db97575228d95f3cd21fdb5b525.ctex"]
 
 [params]
 

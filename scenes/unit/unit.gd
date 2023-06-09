@@ -8,9 +8,7 @@ class_name Unit
 
 
 func _ready():
-	print('hey')
 	ShotTimer.timeout.connect(_on_ShotTimer_timeout)
-	
 	ShotTimer.start()
 
 

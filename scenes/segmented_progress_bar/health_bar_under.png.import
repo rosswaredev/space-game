@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dglh55qrsursg"
-path="res://.godot/imported/type=defender, number=4.png-861365e251ec23df014a773bd52433f2.ctex"
+uid="uid://c3pl7erdmwv1r"
+path="res://.godot/imported/health_bar_under.png-e9f3d0281f22b50107ae18c877b262c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/cards/type=defender, number=4.png"
-dest_files=["res://.godot/imported/type=defender, number=4.png-861365e251ec23df014a773bd52433f2.ctex"]
+source_file="res://scenes/segmented_progress_bar/health_bar_under.png"
+dest_files=["res://.godot/imported/health_bar_under.png-e9f3d0281f22b50107ae18c877b262c4.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsrp8f1xnplh0"
-path="res://.godot/imported/type=drone, number=1.png-2fa0f5610128712c0ab1beae3c6c1ec2.ctex"
+uid="uid://b1e4b6442121h"
+path="res://.godot/imported/ship_fighter_4.png-0a8801383aa67b8ba7279fa8944eec23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/cards/type=drone, number=1.png"
-dest_files=["res://.godot/imported/type=drone, number=1.png-2fa0f5610128712c0ab1beae3c6c1ec2.ctex"]
+source_file="res://assets/ships/ship_fighter_4.png"
+dest_files=["res://.godot/imported/ship_fighter_4.png-0a8801383aa67b8ba7279fa8944eec23.ctex"]
 
 [params]
 

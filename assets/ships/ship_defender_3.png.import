@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dplivsht5av7n"
-path="res://.godot/imported/type=defender, number=2.png-6b975c1636aef63ec9488018b67eaca2.ctex"
+uid="uid://n4oqkvp352fh"
+path="res://.godot/imported/ship_defender_3.png-17b21bd3abbe0980482af3f4b4c7fbdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/cards/type=defender, number=2.png"
-dest_files=["res://.godot/imported/type=defender, number=2.png-6b975c1636aef63ec9488018b67eaca2.ctex"]
+source_file="res://assets/ships/ship_defender_3.png"
+dest_files=["res://.godot/imported/ship_defender_3.png-17b21bd3abbe0980482af3f4b4c7fbdb.ctex"]
 
 [params]
 

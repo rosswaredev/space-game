@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vcwllj65qyj3"
-path="res://.godot/imported/health_bar_progress.png-7a4750beda113745c424159cbc4b0913.ctex"
+uid="uid://2jqcke0u7lsu"
+path="res://.godot/imported/ship_drone_4.png-2aa01bdd9425b98285f93569440d0f5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/unit/health_bar_progress.png"
-dest_files=["res://.godot/imported/health_bar_progress.png-7a4750beda113745c424159cbc4b0913.ctex"]
+source_file="res://assets/ships/ship_drone_4.png"
+dest_files=["res://.godot/imported/ship_drone_4.png-2aa01bdd9425b98285f93569440d0f5e.ctex"]
 
 [params]
 
