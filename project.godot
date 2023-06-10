@@ -56,6 +56,13 @@ mouse_left={
 ]
 }
 
+[layer_names]
+
+2d_render/layer_1="unit"
+2d_render/layer_2="projectile"
+2d_physics/layer_1="unit"
+2d_physics/layer_2="projectile"
+
 [rendering]
 
 renderer/rendering_method="mobile"
