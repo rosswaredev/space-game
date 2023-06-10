@@ -204,7 +204,7 @@
 	"id": "scavenger",
 	"type": "drone",
 	"name": "Scavenger",
-	"health": 1,
+	"health": 2,
 	"attack": 0,
 	"texture": "ship_drone_3.png"
   },
@@ -212,7 +212,7 @@
 	"id": "scrapper",
 	"type": "drone",
 	"name": "Scrapper",
-	"health": 1,
+	"health": 5,
 	"attack": 0,
 	"texture": "ship_drone_4.png"
   },
@@ -220,7 +220,7 @@
 	"id": "sweeper",
 	"type": "drone",
 	"name": "Sweeper",
-	"health": 1,
+	"health": 3,
 	"attack": 0,
 	"texture": "ship_drone_5.png"
   }

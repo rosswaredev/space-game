@@ -1,4 +1,6 @@
 extends TextureProgressBar
+class_name SegmentedProgressBar
+
 
 func _draw():
 	var bar_height = size.y
@@ -10,9 +12,9 @@ func _draw():
 	var life_per_line = 1
 	#lets say we wnat to draw lines from the top to the middle of the bar
 	var line_height = bar_height
-	
+
 	var offset = texture_progress_offset.x
-	
+
 	#how many lines should be drawn
 	var lines_to_draw : int = int(max_value / life_per_line)
 	print(bar_width)
@@ -23,4 +25,4 @@ func _draw():
 			if (draw_pos_x < bar_width):
 				draw_line(Vector2(draw_pos_x,0), Vector2(draw_pos_x, line_height), line_color, line_width)
 			draw_pos_x = draw_pos_x + pixel_per_line
-			
+

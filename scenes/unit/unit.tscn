@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cdbv6tc24xsg1"]
+[gd_scene load_steps=8 format=3 uid="uid://cdbv6tc24xsg1"]
 
 [ext_resource type="Script" path="res://scenes/unit/unit.gd" id="1_vl2jb"]
 [ext_resource type="Texture2D" uid="uid://c2i481ow502fm" path="res://assets/ships/ship_fighter_1.png" id="2_8peqa"]
-[ext_resource type="PackedScene" uid="uid://ddusr8l84a587" path="res://scenes/segmented_progress_bar.tscn" id="3_8u0ua"]
+[ext_resource type="PackedScene" uid="uid://2ishgk5dxla6" path="res://scenes/health_component/health_component.tscn" id="2_iqm6e"]
+[ext_resource type="PackedScene" uid="uid://ddusr8l84a587" path="res://scenes/segmented_progress_bar/segmented_progress_bar.tscn" id="3_8u0ua"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_14m34"]
 radius = 15.0333
@@ -31,6 +32,8 @@ _data = {
 [node name="Unit" type="Area2D"]
 script = ExtResource("1_vl2jb")
 
+[node name="HealthComponent" parent="." instance=ExtResource("2_iqm6e")]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_14m34")
 
@@ -44,4 +47,4 @@ libraries = {
 "": SubResource("AnimationLibrary_2a8tn")
 }
 
-[node name="SegmentedProgressBar" parent="." instance=ExtResource("3_8u0ua")]
+[node name="HealthBar" parent="." instance=ExtResource("3_8u0ua")]
