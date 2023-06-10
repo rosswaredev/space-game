@@ -60,8 +60,10 @@ mouse_left={
 
 2d_render/layer_1="unit"
 2d_render/layer_2="projectile"
-2d_physics/layer_1="unit"
-2d_physics/layer_2="projectile"
+2d_physics/layer_1="player_unit"
+2d_physics/layer_2="enemy_unit"
+2d_physics/layer_3="player_projectile"
+2d_physics/layer_4="enemy_projectile"
 
 [rendering]
 
