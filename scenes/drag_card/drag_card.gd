@@ -23,7 +23,6 @@ func _input(event: InputEvent) -> void:
 
 
 func _get_drag_data(_at_position: Vector2):
-	print('_get_drag_data')
 	var preview = make_drag_preview()
 	set_drag_preview(preview)
 

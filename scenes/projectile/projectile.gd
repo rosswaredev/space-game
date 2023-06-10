@@ -1,4 +1,5 @@
 extends Area2D
+class_name Projectile
 
 
 var speed = 1000
@@ -19,7 +20,7 @@ func _on_Area2D_area_entered(_area):
 
 
 func init(is_from_enemy: bool):
-	var collision_layer = Constants.ENEMY_PROJECTILE_LAYER if is_from_enemy else Constants.PLAYER_PROJECTILE_LAYER
-	var mask_layer = Constants.PLAYER_UNIT_LAYER if is_from_enemy else Constants.ENEMY_UNIT_LAYER
-	set_collision_layer_value(collision_layer, true)
-	set_collision_mask_value(mask_layer, true)
+	var collision_layer_bit = Constants.ENEMY_PROJECTILE_LAYER if is_from_enemy else Constants.PLAYER_PROJECTILE_LAYER
+	var mask_layer_bit = Constants.PLAYER_UNIT_LAYER if is_from_enemy else Constants.ENEMY_UNIT_LAYER
+	set_collision_layer_value(collision_layer_bit, true)
+	set_collision_mask_value(mask_layer_bit, true)

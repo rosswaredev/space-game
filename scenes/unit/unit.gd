@@ -2,6 +2,8 @@ extends Area2D
 class_name Unit
 
 
+signal hit_by_projectile(projectile: Projectile)
+
 @onready var ShotTimer: Timer = $ShotTimer
 @onready var Projectile = preload("res://scenes/projectile/projectile.tscn")
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -20,8 +22,9 @@ func _ready():
 	ShotTimer.start()
 
 
-func _on_area_entered(_area):
-	print('entered')
+func _on_area_entered(area):
+	if not area is Projectile: return
+	hit_by_projectile.emit(area)
 
 
 func _on_ShotTimer_timeout():
@@ -38,17 +41,14 @@ func init(card: CardDefinition, pos: Vector2, is_enemy: bool):
 	_is_enemy = is_enemy
 	position = pos
 	sprite.texture = load("res://assets/ships/" + card.texture)
-	sprite.texture
 	sprite.flip_v = is_enemy
-
-	print(sprite.flip_v)
 
 	health_component.max_health = card.health
 	health_component.health = card.health
 	health_bar.max_value = card.health
 	health_bar.value = card.health
 
-	var collision_layer = Constants.ENEMY_UNIT_LAYER if is_enemy else Constants.PLAYER_UNIT_LAYER
-	var mask_layer = Constants.ENEMY_PROJECTILE_LAYER if is_enemy else Constants.PLAYER_PROJECTILE_LAYER
-	set_collision_layer_value(collision_layer, true)
-	set_collision_mask_value(mask_layer, true)
+	var collision_layer_bit = Constants.ENEMY_UNIT_LAYER if is_enemy else Constants.PLAYER_UNIT_LAYER
+	var mask_layer_bit = Constants.ENEMY_PROJECTILE_LAYER if is_enemy else Constants.PLAYER_PROJECTILE_LAYER
+	set_collision_layer_value(collision_layer_bit, true)
+	set_collision_mask_value(mask_layer_bit, true)

@@ -17,7 +17,6 @@ func _draw():
 
 	#how many lines should be drawn
 	var lines_to_draw : int = int(max_value / life_per_line)
-	print(bar_width)
 	if (lines_to_draw > 0):
 		var pixel_per_line = int(bar_width / lines_to_draw)
 		var draw_pos_x = offset + pixel_per_line

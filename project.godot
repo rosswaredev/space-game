@@ -20,6 +20,10 @@ Global="*res://resources/global.gd"
 GameEvents="*res://resources/game_events.gd"
 Constants="*res://resources/constants.gd"
 
+[debug]
+
+gdscript/warnings/integer_division=0
+
 [display]
 
 window/size/viewport_width=540

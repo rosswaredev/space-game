@@ -57,3 +57,8 @@ func spawn_unit(card: CardDefinition, pos: Vector2, is_enemy: bool) -> void:
 	var unit = unit_scene.instantiate() as Unit
 	add_child(unit)
 	unit.init(card, pos, is_enemy)
+	unit.hit_by_projectile.connect(_on_unit_hit_by_projectile.bind(unit))
+
+
+func _on_unit_hit_by_projectile(projectile: Projectile, unit: Unit) -> void:
+	print(projectile, unit)
