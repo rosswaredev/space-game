@@ -24,7 +24,7 @@ func set_controls():
 		$NameLabel.text = card.name
 		AttackLabel.text = str(card.attack)
 		HealthLabel.text = str(card.health)
-		ShipTexture.texture = load('res://resources/cards/' + card.texture)
+		ShipTexture.texture = load('res://assets/ships/' + card.texture)
 	else:
 		self.modulate.a = 0
 

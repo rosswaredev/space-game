@@ -1,212 +1,227 @@
 [
   {
-    "id": "blaster",
-    "name": "Blaster",
-    "health": 6,
-    "attack": 1,
-    "texture": "ship_fighter_1.png"
+	"id": "blaster",
+	"type": "fighter",
+	"name": "Blaster",
+	"health": 6,
+	"attack": 1,
+	"texture": "ship_fighter_1.png"
   },
   {
-    "id": "slicer",
-    "name": "Slicer",
-    "health": 4,
-    "attack": 1,
-    "texture": "ship_fighter_2.png"
+	"id": "slicer",
+	"type": "fighter",
+	"name": "Slicer",
+	"health": 4,
+	"attack": 1,
+	"texture": "ship_fighter_2.png"
   },
   {
-    "id": "bomber",
-    "name": "Bomber",
-    "health": 4,
-    "attack": 2,
-    "texture": "ship_fighter_3.png"
+	"id": "bomber",
+	"type": "fighter",
+	"name": "Bomber",
+	"health": 4,
+	"attack": 2,
+	"texture": "ship_fighter_3.png"
   },
   {
-    "id": "interceptor",
-    "name": "Interceptor",
-    "health": 3,
-    "attack": 2,
-    "texture": "ship_fighter_4.png"
+	"id": "interceptor",
+	"type": "fighter",
+	"name": "Interceptor",
+	"health": 3,
+	"attack": 2,
+	"texture": "ship_fighter_4.png"
   },
   {
-    "id": "fighter",
-    "name": "Fighter",
-    "health": 2,
-    "attack": 2,
-    "texture": "ship_fighter_5.png"
+	"id": "fighter",
+	"type": "fighter",
+	"name": "Fighter",
+	"health": 2,
+	"attack": 2,
+	"texture": "ship_fighter_5.png"
   },
   {
-    "id": "blocker",
-    "name": "Blocker",
-    "health": 8,
-    "attack": 0,
-    "texture": "ship_defender_1.png"
+	"id": "blocker",
+	"type": "defender",
+	"name": "Blocker",
+	"health": 8,
+	"attack": 0,
+	"texture": "ship_defender_1.png"
   },
   {
-    "id": "defender",
-    "name": "Defender",
-    "health": 6,
-    "attack": 0,
-    "texture": "ship_defender_2.png"
+	"id": "defender",
+	"type": "defender",
+	"name": "Defender",
+	"health": 6,
+	"attack": 0,
+	"texture": "ship_defender_2.png"
   },
   {
-    "id": "protector",
-    "name": "Protector",
-    "health": 4,
-    "attack": 0,
-    "texture": "ship_defender_3.png"
+	"id": "protector",
+	"type": "defender",
+	"name": "Protector",
+	"health": 4,
+	"attack": 0,
+	"texture": "ship_defender_3.png"
   },
   {
-    "id": "guardian",
-    "name": "Guardian",
-    "health": 2,
-    "attack": 0,
-    "texture": "ship_defender_4.png"
+	"id": "guardian",
+	"type": "defender",
+	"name": "Guardian",
+	"health": 2,
+	"attack": 0,
+	"texture": "ship_defender_4.png"
   },
   {
-    "id": "warden",
-    "name": "Warden",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_defender_5.png"
+	"id": "warden",
+	"type": "defender",
+	"name": "Warden",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_defender_5.png"
   },
   {
-    "id": "scout",
-    "name": "Scout",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_scout_1.png"
+	"id": "scout",
+	"name": "Scout",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_scout_1.png"
   },
   {
-    "id": "seeker",
-    "name": "Seeker",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_scout_2.png"
+	"id": "seeker",
+	"name": "Seeker",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_scout_2.png"
   },
   {
-    "id": "surveyor",
-    "name": "Surveyor",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_scout_3.png"
+	"id": "surveyor",
+	"name": "Surveyor",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_scout_3.png"
   },
   {
-    "id": "explorer",
-    "name": "Explorer",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_scout_4.png"
+	"id": "explorer",
+	"name": "Explorer",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_scout_4.png"
   },
   {
-    "id": "pioneer",
-    "name": "Pioneer",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_scout_5.png"
+	"id": "pioneer",
+	"name": "Pioneer",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_scout_5.png"
   },
   {
-    "id": "cruiser",
-    "name": "Cruiser",
-    "health": 6,
-    "attack": 1,
-    "texture": "ship_cruiser_1.png"
+	"id": "cruiser",
+	"name": "Cruiser",
+	"health": 6,
+	"attack": 1,
+	"texture": "ship_cruiser_1.png"
   },
   {
-    "id": "destroyer",
-    "name": "Destroyer",
-    "health": 4,
-    "attack": 2,
-    "texture": "ship_cruiser_2.png"
+	"id": "destroyer",
+	"name": "Destroyer",
+	"health": 4,
+	"attack": 2,
+	"texture": "ship_cruiser_2.png"
   },
   {
-    "id": "frigate",
-    "name": "Frigate",
-    "health": 4,
-    "attack": 1,
-    "texture": "ship_cruiser_3.png"
+	"id": "frigate",
+	"name": "Frigate",
+	"health": 4,
+	"attack": 1,
+	"texture": "ship_cruiser_3.png"
   },
   {
-    "id": "battleship",
-    "name": "Battleship",
-    "health": 2,
-    "attack": 2,
-    "texture": "ship_cruiser_4.png"
+	"id": "battleship",
+	"name": "Battleship",
+	"health": 2,
+	"attack": 2,
+	"texture": "ship_cruiser_4.png"
   },
   {
-    "id": "dreadnought",
-    "name": "Dreadnought",
-    "health": 2,
-    "attack": 3,
-    "texture": "ship_cruiser_5.png"
+	"id": "dreadnought",
+	"name": "Dreadnought",
+	"health": 2,
+	"attack": 3,
+	"texture": "ship_cruiser_5.png"
   },
   {
-    "id": "carrier",
-    "name": "Carrier",
-    "health": 4,
-    "attack": 0,
-    "texture": "ship_carrier_1.png"
+	"id": "carrier",
+	"name": "Carrier",
+	"health": 4,
+	"attack": 0,
+	"texture": "ship_carrier_1.png"
   },
   {
-    "id": "transport",
-    "name": "Transport",
-    "health": 2,
-    "attack": 0,
-    "texture": "ship_carrier_2.png"
+	"id": "transport",
+	"name": "Transport",
+	"health": 2,
+	"attack": 0,
+	"texture": "ship_carrier_2.png"
   },
   {
-    "id": "freighter",
-    "name": "Freighter",
-    "health": 2,
-    "attack": 0,
-    "texture": "ship_carrier_3.png"
+	"id": "freighter",
+	"name": "Freighter",
+	"health": 2,
+	"attack": 0,
+	"texture": "ship_carrier_3.png"
   },
   {
-    "id": "colony",
-    "name": "Colony",
-    "health": 2,
-    "attack": 0,
-    "texture": "ship_carrier_4.png"
+	"id": "colony",
+	"name": "Colony",
+	"health": 2,
+	"attack": 0,
+	"texture": "ship_carrier_4.png"
   },
   {
-    "id": "mothership",
-    "name": "Mothership",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_carrier_5.png"
+	"id": "mothership",
+	"name": "Mothership",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_carrier_5.png"
   },
   {
-    "id": "restorer",
-    "name": "Restorer",
-    "health": 4,
-    "attack": 0,
-    "texture": "ship_drone_1.png"
+	"id": "restorer",
+	"type": "drone",
+	"name": "Restorer",
+	"health": 4,
+	"attack": 0,
+	"texture": "ship_drone_1.png"
   },
   {
-    "id": "retriever",
-    "name": "Retriever",
-    "health": 2,
-    "attack": 0,
-    "texture": "ship_drone_2.png"
+	"id": "retriever",
+	"type": "drone",
+	"name": "Retriever",
+	"health": 2,
+	"attack": 0,
+	"texture": "ship_drone_2.png"
   },
   {
-    "id": "scavenger",
-    "name": "Scavenger",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_drone_3.png"
+	"id": "scavenger",
+	"type": "drone",
+	"name": "Scavenger",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_drone_3.png"
   },
   {
-    "id": "scrapper",
-    "name": "Scrapper",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_drone_4.png"
+	"id": "scrapper",
+	"type": "drone",
+	"name": "Scrapper",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_drone_4.png"
   },
   {
-    "id": "sweeper",
-    "name": "Sweeper",
-    "health": 1,
-    "attack": 0,
-    "texture": "ship_drone_5.png"
+	"id": "sweeper",
+	"type": "drone",
+	"name": "Sweeper",
+	"health": 1,
+	"attack": 0,
+	"texture": "ship_drone_5.png"
   }
 ]

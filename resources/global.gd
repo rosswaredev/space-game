@@ -16,7 +16,7 @@ var current_scene = null
 
 func _ready() -> void:
 	_load_cards()
-	
+
 	current_scene = game_node.get_child(game_node.get_child_count() - 1)
 
 
@@ -34,12 +34,14 @@ func _deferred_change_scene(scene_path: String):
 func _load_cards() -> void:
 	var json_text = FileAccess.get_file_as_string("res://resources/cards/card_pool.json")
 	var json = JSON.parse_string(json_text)
-	
+
 	if json == null:
 		print('Failed loading cards')
 		return
-	
+
 	for card_data in json:
+		if not 'type' in card_data: continue
+
 		card_pool.append(
 			CardDefinition.new(card_data.id, card_data.name, "desc", card_data.texture, card_data.attack, card_data.health)
 		)
