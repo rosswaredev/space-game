@@ -25,7 +25,7 @@ func _on_screen_changed(screen: GameEvents.Screen, scene):
 
 
 func _connect_battle_screen(battle_screen: BattleScreen):
-	battle_screen.display_deck(deck)
+	battle_screen.spawn_units_from_deck(deck)
 
 
 func on_spend_gold(gold_amount: int) -> void:

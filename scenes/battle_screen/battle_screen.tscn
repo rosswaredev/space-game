@@ -1,29 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cy8qm6l2hbgkh"]
+[gd_scene load_steps=2 format=3 uid="uid://cy8qm6l2hbgkh"]
 
 [ext_resource type="Script" path="res://scenes/battle_screen/battle_screen.gd" id="1_66na8"]
-[ext_resource type="PackedScene" uid="uid://cdbv6tc24xsg1" path="res://scenes/unit/unit.tscn" id="2_xj8de"]
 
 [node name="BattleScreen" type="CanvasLayer"]
 script = ExtResource("1_66na8")
-
-[node name="LoadoutContainer" type="CenterContainer" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 656.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Loadout" type="GridContainer" parent="LoadoutContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_override_constants/h_separation = 16
-theme_override_constants/v_separation = 16
-columns = 3
-
-[node name="Unit2" parent="." instance=ExtResource("2_xj8de")]
-position = Vector2(235, 728)
-
-[node name="Unit" parent="." instance=ExtResource("2_xj8de")]
-position = Vector2(234, 193)
-rotation = -3.12396

@@ -18,6 +18,7 @@ config/features=PackedStringArray("4.0", "Mobile")
 
 Global="*res://resources/global.gd"
 GameEvents="*res://resources/game_events.gd"
+Constants="*res://resources/constants.gd"
 
 [display]
 
