@@ -26,7 +26,7 @@ func _ready() -> void:
 
 
 func spawn_units_from_deck(deck_cards: Array[CardDefinition]) -> void:
-	spawn_units_at_position(PLAYER_GRID_POSITION, deck_cards)
+	spawn_units_at_position(PLAYER_GRID_POSITION, deck_cards, false)
 
 
 func spawn_enemy_units() -> void:
@@ -35,10 +35,10 @@ func spawn_enemy_units() -> void:
 		var random_card = Global.card_pool.pick_random()
 		enemy_cards.append(random_card)
 
-	spawn_units_at_position(ENEMY_GRID_POSITION, enemy_cards)
+	spawn_units_at_position(ENEMY_GRID_POSITION, enemy_cards, true)
 
 
-func spawn_units_at_position(position: Vector2, deck_cards: Array[CardDefinition]):
+func spawn_units_at_position(position: Vector2, deck_cards: Array[CardDefinition], is_enemy: bool):
 	for row_index in GRID_ROWS:
 		for col_index in GRID_COLS:
 			var pos = Vector2(
@@ -50,10 +50,10 @@ func spawn_units_at_position(position: Vector2, deck_cards: Array[CardDefinition
 
 			if not card: continue
 
-			spawn_unit(card, pos)
+			spawn_unit(card, pos, is_enemy)
 
 
-func spawn_unit(card, pos) -> void:
+func spawn_unit(card: CardDefinition, pos: Vector2, is_enemy: bool) -> void:
 	var unit = unit_scene.instantiate() as Unit
 	add_child(unit)
-	unit.init(card, pos)
+	unit.init(card, pos, is_enemy)
