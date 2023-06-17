@@ -44,7 +44,7 @@
 	"type": "defender",
 	"name": "Blocker",
 	"health": 8,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_defender_1.png"
   },
   {
@@ -52,7 +52,7 @@
 	"type": "defender",
 	"name": "Defender",
 	"health": 6,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_defender_2.png"
   },
   {
@@ -60,7 +60,7 @@
 	"type": "defender",
 	"name": "Protector",
 	"health": 4,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_defender_3.png"
   },
   {
@@ -68,7 +68,7 @@
 	"type": "defender",
 	"name": "Guardian",
 	"health": 2,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_defender_4.png"
   },
   {
@@ -76,42 +76,42 @@
 	"type": "defender",
 	"name": "Warden",
 	"health": 1,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_defender_5.png"
   },
   {
 	"id": "scout",
 	"name": "Scout",
 	"health": 1,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_scout_1.png"
   },
   {
 	"id": "seeker",
 	"name": "Seeker",
 	"health": 1,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_scout_2.png"
   },
   {
 	"id": "surveyor",
 	"name": "Surveyor",
 	"health": 1,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_scout_3.png"
   },
   {
 	"id": "explorer",
 	"name": "Explorer",
 	"health": 1,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_scout_4.png"
   },
   {
 	"id": "pioneer",
 	"name": "Pioneer",
 	"health": 1,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_scout_5.png"
   },
   {
@@ -153,35 +153,35 @@
 	"id": "carrier",
 	"name": "Carrier",
 	"health": 4,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_carrier_1.png"
   },
   {
 	"id": "transport",
 	"name": "Transport",
 	"health": 2,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_carrier_2.png"
   },
   {
 	"id": "freighter",
 	"name": "Freighter",
 	"health": 2,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_carrier_3.png"
   },
   {
 	"id": "colony",
 	"name": "Colony",
 	"health": 2,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_carrier_4.png"
   },
   {
 	"id": "mothership",
 	"name": "Mothership",
 	"health": 1,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_carrier_5.png"
   },
   {
@@ -189,7 +189,7 @@
 	"type": "drone",
 	"name": "Restorer",
 	"health": 4,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_drone_1.png"
   },
   {
@@ -197,7 +197,7 @@
 	"type": "drone",
 	"name": "Retriever",
 	"health": 2,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_drone_2.png"
   },
   {
@@ -205,7 +205,7 @@
 	"type": "drone",
 	"name": "Scavenger",
 	"health": 2,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_drone_3.png"
   },
   {
@@ -213,7 +213,7 @@
 	"type": "drone",
 	"name": "Scrapper",
 	"health": 5,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_drone_4.png"
   },
   {
@@ -221,7 +221,7 @@
 	"type": "drone",
 	"name": "Sweeper",
 	"health": 3,
-	"attack": 0,
+	"attack": 1,
 	"texture": "ship_drone_5.png"
   }
 ]

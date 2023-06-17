@@ -29,6 +29,7 @@ grow_vertical = 2
 color = Color(0.113725, 0.0627451, 0.14902, 1)
 
 [node name="StarField" parent="Background" instance=ExtResource("2_xtujl")]
+visible = false
 position = Vector2(270, -20)
 
 [node name="Game" type="Node2D" parent="." groups=["game"]]
